@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>REAI — Your AI mentor, coach, and guide</title>
+<title>AriAI — Your AI mentor, coach, and guide</title>
 <style>
   :root {
     --bg: #f3f0ff;
@@ -196,14 +196,14 @@
 </style>
 </head>
 <body>
-  <div class="app" role="application" aria-label="REAI chat">
+  <div class="app" role="application" aria-label="AriAI chat">
     <header>
-      <h1>REAI</h1>
+      <h1>AriAI</h1>
       <p>Your AI mentor, coach, and guide.</p>
     </header>
 
     <div class="messages" id="messages" aria-live="polite">
-      <div class="msg msg--rei">Hey — I'm REAI. I'm here to help you think, learn, and grow. What's on your mind?</div>
+      <div class="msg msg--rei">Hey — I'm AriAI. I'm here to help you think, learn, and grow. What's on your mind?</div>
     </div>
 
     <form class="composer" id="composer" autocomplete="off">
@@ -211,7 +211,7 @@
         type="text"
         id="input"
         placeholder="Ask me anything..."
-        aria-label="Message REAI"
+        aria-label="Message AriAI"
       />
       <button type="submit" id="send" disabled>Send</button>
     </form>
@@ -240,7 +240,7 @@
       function addTyping() {
         const el = document.createElement('div');
         el.className = 'msg msg--rei msg--typing';
-        el.setAttribute('aria-label', 'REAI is typing');
+        el.setAttribute('aria-label', 'AriAI is typing');
         el.innerHTML = '<span></span><span></span><span></span>';
         messages.appendChild(el);
         scrollToBottom();
